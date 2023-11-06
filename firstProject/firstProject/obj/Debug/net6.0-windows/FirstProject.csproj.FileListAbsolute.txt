@@ -1,0 +1,17 @@
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\bin\Debug\net6.0-windows\FirstProject.exe
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\bin\Debug\net6.0-windows\FirstProject.deps.json
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\bin\Debug\net6.0-windows\FirstProject.runtimeconfig.json
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\bin\Debug\net6.0-windows\FirstProject.dll
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\bin\Debug\net6.0-windows\FirstProject.pdb
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\FirstProject.frmEntry.resources
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\FirstProject.frmMain.resources
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\FirstProject.csproj.GenerateResource.cache
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\FirstProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\FirstProject.AssemblyInfoInputs.cache
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\FirstProject.AssemblyInfo.cs
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\FirstProject.csproj.CoreCompileInputs.cache
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\FirstProject.dll
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\refint\FirstProject.dll
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\FirstProject.pdb
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\FirstProject.genruntimeconfig.cache
+C:\Users\Serarian\source\repos\FirstProject\FirstProject\obj\Debug\net6.0-windows\ref\FirstProject.dll
