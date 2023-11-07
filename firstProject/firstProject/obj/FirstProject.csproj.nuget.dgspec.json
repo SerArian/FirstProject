@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Serarian\\source\\repos\\FirstProject\\FirstProject\\FirstProject.csproj": {}
+    "C:\\Users\\Serarian\\source\\repos\\firstProject\\FirstProject\\FirstProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Serarian\\source\\repos\\FirstProject\\FirstProject\\FirstProject.csproj": {
+    "C:\\Users\\Serarian\\source\\repos\\firstProject\\FirstProject\\FirstProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Serarian\\source\\repos\\FirstProject\\FirstProject\\FirstProject.csproj",
+        "projectUniqueName": "C:\\Users\\Serarian\\source\\repos\\firstProject\\FirstProject\\FirstProject.csproj",
         "projectName": "FirstProject",
-        "projectPath": "C:\\Users\\Serarian\\source\\repos\\FirstProject\\FirstProject\\FirstProject.csproj",
+        "projectPath": "C:\\Users\\Serarian\\source\\repos\\firstProject\\FirstProject\\FirstProject.csproj",
         "packagesPath": "C:\\Users\\Serarian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Serarian\\source\\repos\\FirstProject\\FirstProject\\obj\\",
+        "outputPath": "C:\\Users\\Serarian\\source\\repos\\firstProject\\FirstProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

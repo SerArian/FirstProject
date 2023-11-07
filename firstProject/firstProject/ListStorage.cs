@@ -9,7 +9,7 @@ namespace FirstProject
 {
     public class ListStorage : Storage
     {
-        private List<Product> productList = new List<Product>();
+        private static List<Product> productList = new List<Product>();
 
         public override void InsertProduct(Product product)
         {

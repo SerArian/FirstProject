@@ -23,6 +23,7 @@ namespace FirstProject
             productList = new List<Product>();
             // Subscribe to the TextChanged event of txtID
             txtID.TextChanged += txtID_TextChanged;
+            cmbMUnit.SelectedIndex = 0;
 
         }
         private void txtID_TextChanged(object sender, EventArgs e)
@@ -36,20 +37,20 @@ namespace FirstProject
                 {
                     // ID exists in the list, autofill Name and MeasurementUnit
                     txtName.Text = product.Name;
-                    txtMUnit.Text = product.MeasurementUnit;
+                    cmbMUnit.Text = product.MeasurementUnit;
                 }
                 else
                 {
-                    // ID doesn't exist in the list, clear Name and MeasurementUnit
+                    
                     txtName.Clear();
-                    txtMUnit.Clear();
+
                 }
             }
             else
             {
-                
+
                 txtName.Clear();
-                txtMUnit.Clear();
+
             }
         }
 
@@ -77,13 +78,13 @@ namespace FirstProject
             if (!string.IsNullOrEmpty(idText) && int.TryParse(idText, out int idToUpdate))
             {
 
-                liststorage.UpdateProduct(idToUpdate, txtName.Text, txtMUnit.Text);
+                liststorage.UpdateProduct(idToUpdate, txtName.Text, cmbMUnit.Text);
 
                 // Update the DataGridView to reflect the changes
                 PopulateDataGridView(productList);
                 txtID.Clear();
                 txtName.Clear();
-                txtMUnit.Clear();
+
             }
             else
             {
@@ -103,7 +104,7 @@ namespace FirstProject
                 PopulateDataGridView(productList);
                 txtID.Clear();
                 txtName.Clear();
-                txtMUnit.Clear();
+
             }
             else
             {
@@ -116,22 +117,37 @@ namespace FirstProject
         {
             if (rbDatabase.Checked)
             {
-                DatabaseStorage dbstorage = new DatabaseStorage();
+                // DBCODE
             }
             else if (rbMemory.Checked)
             {
-                Product p = new Product();
-                p.ID = int.Parse(txtID.Text);
-                p.Name = txtName.Text;
-                p.MeasurementUnit = txtMUnit.Text;
-                liststorage.InsertProduct(p);
-                productList.Add(p);
-                PopulateDataGridView(productList);
-                txtID.Clear();
-                txtName.Clear();
-                txtMUnit.Clear();
-
-
+                if (int.TryParse(txtID.Text, out int id))
+                {
+                    // Check if the ID already exists in the list
+                    if (productList.Any(p => p.ID == id))
+                    {
+                        MessageBox.Show("Product with the same ID already exists in the list.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        Product p = new Product
+                        {
+                            ID = id,
+                            Name = txtName.Text,
+                            MeasurementUnit = cmbMUnit.Text
+                        };
+                        liststorage.InsertProduct(p);
+                        productList.Add(p);
+                        PopulateDataGridView(productList);
+                        txtID.Clear();
+                        txtName.Clear();
+                       // cmbMUnit.SelectedIndex = -1;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid or empty ID. Please enter a valid ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
         private void PopulateDataGridView(List<Product> productList)
@@ -158,7 +174,7 @@ namespace FirstProject
                     liststorage.UpdateProduct(id, name, measurementUnit);
                     txtID.Clear();
                     txtName.Clear();
-                    txtMUnit.Clear();
+
                 }
             }
         }

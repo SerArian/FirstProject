@@ -33,9 +33,9 @@
             lblMUnit = new Label();
             txtID = new TextBox();
             txtName = new TextBox();
-            txtMUnit = new TextBox();
             btnExit = new Button();
             panel1 = new Panel();
+            cmbMUnit = new ComboBox();
             groupBox1 = new GroupBox();
             rbDatabase = new RadioButton();
             rbMemory = new RadioButton();
@@ -100,13 +100,6 @@
             txtName.Size = new Size(153, 23);
             txtName.TabIndex = 1;
             // 
-            // txtMUnit
-            // 
-            txtMUnit.Location = new Point(224, 69);
-            txtMUnit.Name = "txtMUnit";
-            txtMUnit.Size = new Size(153, 23);
-            txtMUnit.TabIndex = 2;
-            // 
             // btnExit
             // 
             btnExit.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
@@ -120,10 +113,10 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(cmbMUnit);
             panel1.Controls.Add(groupBox1);
             panel1.Controls.Add(lblMUnit);
             panel1.Controls.Add(lblID);
-            panel1.Controls.Add(txtMUnit);
             panel1.Controls.Add(txtID);
             panel1.Controls.Add(txtName);
             panel1.Controls.Add(lblName);
@@ -132,6 +125,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(865, 100);
             panel1.TabIndex = 5;
+            // 
+            // cmbMUnit
+            // 
+            cmbMUnit.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbMUnit.FormattingEnabled = true;
+            cmbMUnit.Items.AddRange(new object[] { "TEM", "KG", "LT", "MET", "ΚΙΒ" });
+            cmbMUnit.Location = new Point(224, 68);
+            cmbMUnit.Name = "cmbMUnit";
+            cmbMUnit.Size = new Size(153, 23);
+            cmbMUnit.TabIndex = 5;
             // 
             // groupBox1
             // 
@@ -281,7 +284,6 @@
         private Label lblMUnit;
         private TextBox txtID;
         private TextBox txtName;
-        private TextBox txtMUnit;
         private Button btnExit;
         private Panel panel1;
         private Panel panel2;
@@ -296,5 +298,6 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private Button btnSave;
+        private ComboBox cmbMUnit;
     }
 }
